@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Pokedéx.js - Urbe</title>
+    </head>
+    <body>
+        <div class="pokedex pokedex-container">
+            <div class="pokedex pokedex-header">
+                <div class="pokedex pokedex-info-left">
+                    <span>Pokédex Nacional</span>
+                </div>
+                <div class="pokedex pokedex-info-right"></div>
+            </div>
+            <div class="pokedex pokedex-body">
+                <div class="pokedex pokedex-view"">
+                    <div class="pokedex pokedex-view-box">
+                        <img id="pokemon-view-box" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png">
+                    </div>
+                    <div class="pokedex pokedex-info-box">
+                        <span id="pokemon-name" class="pokedex pokedex-info-name"></span>
+                        <span id="pokemon-height" class="pokedex pokedex-info-height"></span>
+                        <span id="pokemon-weight" class="pokedex pokedex-info-weight"></span>
+                    </div>
+                    <div class="pokedex pokedex-audio-box">
+                        <div>
+                            <span>Grito antiguo</span>
+                            <audio id="pokemon-audio-legacy" controls>
+                                <source id="pokemon-audio-legacy-src" src="https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/1.ogg" type="audio/ogg">
+                              Tu navegador no tiene soporte para tocar audio
+                            </audio>
+                            <span>Grito actual</span>
+                            <audio id="pokemon-audio-latest" controls>
+                                <source id="pokemon-audio-latest-src" src="https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/1.ogg" type="audio/ogg">
+                              Tu navegador no tiene soporte para tocar audio
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                <div id="pokemon-list" class="pokedex pokedex-list">
+                </div>
+                <div id="pokedex pokedex-nav-panel">
+                    <button id="nav-next" class="pokedex pokedex-nav-button pokedex-button">Siguiente</button>
+                    <button id="nav-prev" class="pokedex pokedex-nav-button pokedex-button">Anterior</button>
+                </div>
+            </div>
+            <div class="pokedex pokedex-footer">
+                <div class="pokedex pokedex-info-left">
+                    <span>Hecho por: Diego García y <b>Valeria pon tu nombre aqui</b></span>
+                </div>
+                <div class="pokedex pokedex-info-right"></div>
+            </div>
+        </div>
+    </body>
+    
+    <script src="index.js"></script>
+</html>
