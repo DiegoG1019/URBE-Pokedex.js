@@ -91,7 +91,9 @@ async function RecreateViewTable() {
         table.appendChild(div);
         
         let pokeball = document.createElement("tr");
-        pokeball.className = "pokedex pokedex-list-pokeball";
+        let pokeSymbol = document.createElement("span");
+        pokeSymbol.className = "pokedex pokedex-list-pokeball";
+        pokeball.appendChild(pokeSymbol);
 
         let pokeId = document.createElement("th");
         let pokeName = document.createElement("th");
