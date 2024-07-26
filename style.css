@@ -1,0 +1,126 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Oxanium', cursive;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.pokedex-container {
+  width: 80%;
+  max-width: 1200px;
+  background-color: #efefef;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Header Styles */
+.pokedex-header {
+  background-color: #e45700;
+  color: #ffffff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pokedex-info-left {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/* Body Styles */
+.pokedex-body {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.pokedex-view {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.pokedex-view-box {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pokedex-view-box img {
+  width: 200px;
+  height: 200px;
+}
+
+.pokedex-info-box {
+  flex: 1;
+  text-align: center;
+}
+
+.pokedex-info-box span {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+
+
+.pokedex-audio-box {
+  flex: 1;
+  text-align: center;
+}
+
+.pokedex-audio-box span {
+  display: block;
+  font-size: 1em;
+  margin-top: 10px;
+}
+
+
+/* Navigation Panel Styles */
+#pokedex.pokedex-nav-panel {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.pokedex-nav-button {
+  background-color: #e45700;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.pokedex-nav-button:hover {
+  background-color: #e45700;
+}
+
+/* Footer Styles */
+.pokedex-footer {
+  background-color: #e45700;
+  color: #ffffff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
